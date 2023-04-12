@@ -1,0 +1,110 @@
+/* Matt Ballard */
+/* 4/7/2023 */
+
+@font-face {
+    font-family: space;
+    src: url("Agelast-mLlAm.otf");
+}
+
+.bg-header {
+    background-image: url("des-bg.jpg");
+    background-size: cover;
+}
+
+.header-mainfont {
+    font-family: space;
+    font-size: 2rem;
+}
+
+.bg-fill {
+    background-color: #212529;
+    height: 100vh;
+}
+
+.bg-darkslash {
+    background-image: linear-gradient(135deg, #212529 33.33%, transparent 33.33%, transparent 66.67%, #a5aead 66.67%), linear-gradient(135deg, #212529 33.33%, transparent 33.33%, transparent 66.67%, #dadada 66.67%);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.img-size {
+    width: 200px;
+    height: 200px;
+}
+
+.main-image-size {
+    width: 30%;
+    height: auto;
+}
+
+/* fade ins and outs */
+.fade-in-fastest {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-in-fast {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.fade-in-medium {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+.fade-in-slow {
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+.fade-in-superslow {
+    opacity: 0;
+    animation: fadeIn 6s ease-in-out forwards;
+}
+
+.fade-in-superduperslow {
+    opacity: 0;
+    animation: fadeIn 8.8s ease-in-out forwards;
+    animation-delay: 2.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out-fastest {
+    opacity: 1;
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+.fade-out-fast {
+    opacity: 1;
+    animation: fadeOut 2s ease-in-out backwards;
+}
+
+.fade-out-medium {
+    opacity: 1;
+    animation: fadeOut 3s ease-in-out backwards;
+}
+
+.fade-out-slow {
+    opacity: 1;
+    animation: fadeOut 4s ease-in-out backwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

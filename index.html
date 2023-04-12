@@ -1,0 +1,136 @@
+<!-- Matt Ballard -->
+<!-- 4/7/2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="theBody">
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-header">
+                <div class="container-fluid header-mainfont">
+                    <a id="homeLink" class="navbar-brand header-mainfont fade-in-fast" href="#">Launch Library</a>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link m-2 fade-in-slow" href="#" id="next5">Launches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-2 fade-in-superslow" href="#" id="spacePeople">Astronauts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Home Page Prompt -->
+        <div class="container-fluid bg-dark" id="clickPrompts">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <h1 class="header-mainfont text-center text-white fade-in-superduperslow m-5">Select Launches or
+                        Astronauts</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Page Images
+        <div id="homeDiv" class="">
+            <div class="container-fluid bg-darkslash">
+                <div id="homeImagesDiv" class="row justify-content-center d-none">
+                    <div class="col">
+                        <img id="homeImage1" class="img-size" src="#" alt="home image 1">
+                    </div>
+                    <div class="col">
+                        <img id="homeImage2" class="img-size" src="#" alt="home image 2">
+                    </div>
+                    <div class="col">
+                        <img id="homeImage3" class="img-size" src="#" alt="home image 3">
+                    </div>
+                    <div class="col">
+                        <img id="homeImage4" class="img-size" src="#" alt="home image 4">
+                    </div>
+                    <div class="col">
+                        <img id="homeImage5" class="img-size" src="#" alt="home image 5">
+                    </div>
+                    <div class="col">
+                        <img id="homeImage6" class="img-size" src="#" alt="home image 6">
+                    </div>
+                    <div class="col">
+                        <img id="homeImage7" class="img-size" src="#" alt="home image 7">
+                    </div>
+                    <div class="col">
+                        <img id="homeImage8" class="img-size" src="#" alt="home image 8">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Home Image from "Launch Library" click -->
+        <div id="homeDiv">
+            <div class="container-fluid bg-darkslash">
+                <div id="homeImagesDiv" class="row justify-content-center d-none">
+                    <div class="col-lg text-center">
+                        <h1 class="text-muted" id="stationText"></h1>
+                        <img src="#" class="main-image-size rounded border border-dark" id="homeImage" alt="Main Home Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Launch/Astronaut Section *Invisible*-->
+        <div id="mainDiv" class="bg-darkslash d-none">
+            <div class="container-fluid bg-darklash">
+                <div class="row justify-content-center text-center">
+                    <div id="fade1" class="col-lg border border-dark border-2 rounded p-3 m-3 bg-light">
+                        <img id="image1" class="border border-2 border-dark rounded" src="#" alt="Launch/Astronaut1"
+                            width="200" height="200">
+                        <h1 id="title1" class="text-decoration-underline"></h1>
+                        <p id="text1"></p>
+                        <p id="text1.2"></p>
+                        <p id="text1.3"></p>
+                    </div>
+                    <div id="fade2" class="col-lg border border-dark border-2 rounded p-3 m-3 bg-light">
+                        <img id="image2" class="border border-2 border-dark rounded" src="#" alt="Launch/Astronaut2"
+                            width="200" height="200">
+                        <h1 id="title2" class="text-decoration-underline"></h1>
+                        <p id="text2"></p>
+                        <p id="text2.2"></p>
+                        <p id="text2.3"></p>
+                    </div>
+                    <div id="fade3" class="col-lg border border-dark border-2 rounded p-3 m-3 bg-light">
+                        <img id="image3" class="border border-2 border-dark rounded" src="#" alt="Launch/Astronaut3"
+                            width="200" height="200">
+                        <h1 id="title3" class="text-decoration-underline"></h1>
+                        <p id="text3"></p>
+                        <p id="text3.2"></p>
+                        <p id="text3.3"></p>
+                    </div>
+                    <div id="fade4" class="col-lg border border-dark border-2 rounded p-3 m-3 bg-light">
+                        <img id="image4" class="border border-2 border-dark rounded" src="#" alt="Launch/Astronaut4"
+                            width="200" height="200">
+                        <h1 id="title4" class="text-decoration-underline"></h1>
+                        <p id="text4"></p>
+                        <p id="text4.2"></p>
+                        <p id="text4.3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
